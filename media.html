@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nchedo Altschool Bio Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .bio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .bio-container img {
+            border-radius: 50%;
+            max-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .bio-container h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .bio-container p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            text-align: center;
+            color: #555;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #4CAF50;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        /* Responsive design */
+        @media (min-width: 600px) {
+            .bio-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .bio-container img {
+                max-width: 200px;
+                margin-right: 30px;
+            }
+
+            .bio-container h1 {
+                font-size: 2.5rem;
+            }
+
+            .bio-container p {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .bio-container h1 {
+                font-size: 3rem;
+            }
+
+            .bio-container p {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Altschool Bio Page</h1>
+    </header>
+
+    <div class="bio-container">
+        <!-- Picture Element for Responsive Images -->
+        <picture>
+            <source media="(min-width: 1024px)" srcset="images/bio_large.jpg">
+            <source media="(min-width: 600px)" srcset="images/bio_medium.jpg">
+            <img src="images/bio_small.jpg" alt="My Profile Picture">
+        </picture>
+
+        <div class="bio-text">
+            <h1>Get To Know Me</h1>
+            <p>Hi, I'm Nchedo, a passionate and driven individual . Currently, I'm pursuing Backend Engineering and excited to learn all it takes to make my mark in technology. With a love for innovation, I'm always exploring new ways to grow both personally and professionally.
+               When I'm not working, you can find me playing volleyball. Whether it is sports, working out, or spending time with friends, I believe in enjoying life to the fullest.
+                I'm always open to new opportunities and collaborations, and I'm excited for what the future holds!</p>
+
+            <div class="social-links">
+                <a href="https://twitter.com/hetros2025" target="_blank">Twitter</a>
+                <a href="https://linkedin.com/in/david-nchedo-ahiwe-a055681b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+                Organizations" target="_blank">LinkedIn</a>
+                <a href="https://github.com/in/david-nchedo-ahiwe-a055681b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+                Organizations" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
